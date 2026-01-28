@@ -1,0 +1,133 @@
+@use 'variaveis' as v;
+
+.section {
+    padding: 44px 0;
+}
+
+.section--alt {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.list {
+    margin-top: 10px;
+
+    li {
+        margin-left: 18px;
+        margin-top: 6px;
+    }
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+    margin-top: 10px;
+
+    span {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text);
+        outline: none;
+        resize: none;
+        margin-bottom: 8px;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: rgba(230, 103, 103, 0.55);
+    }
+}
+
+.section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.pill.is-active {
+    border-color: rgba(230, 103, 103, 0.45);
+    background: rgba(230, 103, 103, 0.12);
+    color: #{v.$primary};
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.contact__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.link-card {
+    border: 1px solid var(--border);
+    border-radius: #{v.$radius};
+    padding: 14px;
+    background: var(--card);
+    box-shadow: #{v.$shadow};
+}
+
+.link-card__title {
+    font-weight: 900;
+}
+
+.link-card__desc {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .section-grid,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__links {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateus Gonçalves | Portfólio</title>
+    <meta name="author" content="Mateus Gonçalves" />
+    <meta name="keywords" content="portfólio, Java, Full-Stack, desenvolvedor júnior, HTML, CSS, JavaScript, SASS" />
+    <meta name="description" content="Portfólio versão 1. Projetos e informações de Mateus Gonçalves." />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./favicon.ico" />
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+        <div class="container header-grid">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">MG</div>
+
+                <div class="brand-text">
+                    <p class="eyebrow">Portfólio V1.0</p>
+                    <h1>Mateus Gonçalves</h1>
+                    <p class="subtitle">Desenvolvedor Full-Stack Java em formação</p>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+
+                <button class="btn btn--ghost" id="toggleTheme" type="button">
+                    Tema
+                </button>
+            </nav>
+        </div>
+
+        <div class="container hero" id="conteudo">
+            <div class="hero-text">
+                <h2>
+                    Eu construo interfaces simples, organizadas e responsivas com
+                    <span class="highlight">HTML, CSS/SASS e JavaScript</span>.
+                </h2>
+                <p>
+                    Este é meu portfólio versão 1.0 (de curso): direto ao ponto, com
+                    projeto, link e código.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn" href="#projetos">Ver projetos</a>
+                    <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+                </div>
+
+                <ul class="quick-info" aria-label="Informações rápidas">
+                    <li><span>📍</span> Brasil</li>
+                    <li><span>🎯</span> Front-end / Full Stack Java (em estudo)</li>
+                    <li><span>🛠️</span> Web, Java, SASS</li>
+                </ul>
+            </div>
+
+            <div class="hero-card" role="img" aria-label="Card de destaques">
+                <div class="hero-card__top">
+                    <p class="chip">Destaque</p>
+                    <p class="muted">Projetos práticos do curso + pessoais</p>
+                </div>
+
+                <div class="hero-card__list">
+                    <div class="mini">
+                        <p class="mini__title">Organização</p>
+                        <p class="mini__desc">Pastas, padrão e sem bagunça.</p>
+                    </div>
+
+                    <div class="mini">
+                        <p class="mini__title">Responsivo</p>
+                        <p class="mini__desc">Funciona bem no celular.</p>
+                    </div>
+
+                    <div class="mini">
+                        <p class="mini__title">SASS</p>
+                        <p class="mini__desc">Variáveis e arquivos separados.</p>
+                    </div>
+                </div>
+
+                <a class="link" href="#projetos">Ir para projetos →</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="sobre">
+            <div class="container section-grid">
+                <div>
+                    <h3>Sobre mim</h3>
+
+                    <p class="muted">
+                        Sou estudante e estou construindo experiência com projetos práticos
+                        (front-end) e aprendendo fundamentos para Full Stack Java.
+                    </p>
+
+                    <p>
+                        Gosto de deixar o código legível, usar boas práticas e entregar
+                        layout consistente. Aqui você vai ver alguns projetos e links para
+                        repos/deploy.
+                    </p>
+
+                    <div class="badges" aria-label="Tecnologias">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">SASS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Java</span>
+                        <span class="badge">React (estudando)</span>
+                    </div>
+                </div>
+
+                <aside class="card">
+                    <h4>O que eu busco</h4>
+                    <ul class="list">
+                        <li>Vaga júnior</li>
+                        <li>Projetos com front-end e APIs</li>
+                        <li>Evoluir em UX/UI, Java, acessibilidade e organização</li>
+                    </ul>
+
+                    <button class="btn btn--ghost" id="btnCopyEmail" type="button">
+                        Copiar meu e-mail
+                    </button>
+
+                    <p class="small muted" id="copyStatus" aria-live="polite"></p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="projetos">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h3>Projetos</h3>
+                    </div>
+
+                    <div class="projects" id="projectsGrid">
+                        <article class="project project--efood" data-tags="frontend javascript">
+                            <div class="project__thumb" aria-hidden="true">
+                                <span>eFood</span>
+                            </div>
+
+                            <div class="project__body">
+                                <h4 class="project__title">EFOOD (Loja / Cardápio)</h4>
+                                <p class="muted">
+                                    Projeto do curso focado em listagem, carrinho e consumo de APIs,
+                                    usando bases visuais do Figma.
+                                </p>
+
+                                <div class="project__tech">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Redux</span>
+                                    <span class="tag">Styled Components</span>
+                                </div>
+
+                                <div class="project__actions">
+                                    <a class="btn btn--sm" href="https://efood-psi-opal.vercel.app" target="_blank"
+                                        rel="noreferrer">
+                                        Deploy
+                                    </a>
+
+                                    <a class="btn btn--ghost btn--sm" href="https://github.com/Tamm619/efood"
+                                        target="_blank" rel="noreferrer">
+                                        Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project project--dyinglight" data-tags="frontend">
+                            <div class="project__thumb" aria-hidden="true">
+                                <span>Dying Light</span>
+                            </div>
+
+                            <div class="project__body">
+                                <h4 class="project__title">Dying Light - Fan Site (Front-End)</h4>
+
+                                <p class="muted">
+                                    Um site inspirado no jogo Dying Light, utilizando Sass como pré processador de CSS,
+                                    focado na parte visual.
+                                </p>
+
+                                <div class="project__tech">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">SASS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+
+                                <div class="project__actions">
+                                    <a class="btn btn--sm" href="https://dyinglight-frontend.vercel.app" target="_blank"
+                                        rel="noreferrer">
+                                        Deploy
+                                    </a>
+
+                                    <a class="btn btn--ghost btn--sm"
+                                        href="https://github.com/Tamm619/dyinglight-frontend" target="_blank"
+                                        rel="noreferrer">
+                                        Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project project--tarefas" data-tags="javascript">
+                            <div class="project__thumb" aria-hidden="true">
+                                <span>Gerenciamento de Tarefas</span>
+                            </div>
+
+                            <div class="project__body">
+                                <h4 class="project__title">Gerenciamento de Tarefas (CRUD)</h4>
+
+                                <p class="muted">
+                                    CRUD simples no front com TS: adicionar, concluir, editar e remover. Aplicados
+                                    utilizando React.
+                                </p>
+
+                                <div class="project__tech">
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">LocalStorage</span>
+                                </div>
+
+                                <div class="project__actions">
+                                    <a class="btn btn--sm" href="https://gerenciamentotarefas-ivory.vercel.app"
+                                        target="_blank" rel="noreferrer">
+                                        Deploy
+                                    </a>
+
+                                    <a class="btn btn--ghost btn--sm"
+                                        href="https://github.com/Tamm619/gerenciamentotarefas" target="_blank"
+                                        rel="noreferrer">
+                                        Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section" id="contato">
+            <div class="container contact">
+                <div class="contact__text">
+                    <h3>Contato</h3>
+                    <p class="muted">
+                        Quer falar comigo? Me chama em alguma rede ou envia e-mail.
+                    </p>
+
+                    <div class="contact__links">
+                        <a class="link-card" href="https://github.com/Tamm619" target="_blank" rel="noreferrer">
+                            <p class="link-card__title">GitHub</p>
+                            <p class="link-card__desc">Ver repositórios</p>
+                        </a>
+
+                        <a class="link-card" href="https://www.linkedin.com/in/MateusBoncalves-FullStack-Java/"
+                            target="_blank" rel="noreferrer">
+                            <p class="link-card__title">LinkedIn</p>
+                            <p class="link-card__desc">Perfil profissional</p>
+                        </a>
+
+                        <a class="link-card" href="mailto:mateusenrique123@email.com">
+                            <p class="link-card__title">E-mail</p>
+                            <p class="link-card__desc">mateusenrique123@email.com</p>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="card contact__form" id="formContato">
+                    <h4>Mensagem rápida</h4>
+                    <label class="field">
+                        <span>Seu nome</span>
+                        <input name="nome" type="text" placeholder="Ex: Mateus" required />
+                    </label>
+
+                    <label class="field">
+                        <span>Sua mensagem</span>
+                        <textarea name="msg" rows="4" placeholder="Escreva uma mensagem curta…" required></textarea>
+                    </label>
+
+                    <button class="btn" type="submit">Simular envio</button>
+                    <p class="small muted" id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p class="muted small">
+                © <span id="year"></span> Mateus Gonçalves — Portfólio V1.0
+            </p>
+
+            <div class="footer-links">
+                <a href="#topo">Voltar ao topo</a>
+                <a href="#projetos">Projetos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
